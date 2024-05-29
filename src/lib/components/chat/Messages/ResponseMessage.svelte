@@ -353,11 +353,12 @@
 
 		<div class="w-full overflow-hidden pl-1">
 			<Name>
-				{model?.name ?? message.model}
+				Your Legel Assistant
 
 				{#if message.timestamp}
 					<span
-						class=" self-center invisible group-hover:visible text-gray-400 text-xs font-medium uppercase"
+						class=" self-center invisible group-hover:visible text-gra
+y-400 text-xs font-medium uppercase"
 					>
 						{dayjs(message.timestamp * 1000).format($i18n.t('h:mm a'))}
 					</span>
@@ -950,5 +951,9 @@
 	.buttons {
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
+	}
+
+	.opacity-0 {
+		opacity: 0; /* 8% opacity */
 	}
 </style>

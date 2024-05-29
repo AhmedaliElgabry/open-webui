@@ -201,7 +201,7 @@
 			class="flex w-full text-left px-0.5 outline-none bg-transparent truncate text-lg font-semibold placeholder-gray-400 focus:outline-none"
 		>
 			{#if selectedModel}
-				{selectedModel.label}
+				Your Legel Assistant
 			{:else}
 				{placeholder}
 			{/if}
@@ -248,7 +248,7 @@
 						<div class="flex items-center gap-2">
 							<div class="flex items-center">
 								<div class="line-clamp-1">
-									{item.label}
+									Your Legal Assistant
 								</div>
 								{#if item.model.owned_by === 'ollama' && (item.model.ollama?.details?.parameter_size ?? '') !== ''}
 									<div class="flex ml-1 items-center">
@@ -265,7 +265,7 @@
 											className="self-end"
 										>
 											<span class=" text-xs font-medium text-gray-600 dark:text-gray-400"
-												>{item.model.ollama?.details?.parameter_size ?? ''}</span
+												> </span
 											>
 										</Tooltip>
 									</div>

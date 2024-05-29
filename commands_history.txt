@@ -1,0 +1,166 @@
+    1  git clone https://github.com/open-webui/open-webui.git
+    2  curl -fsSL https://ollama.com/install.sh | sh
+    3  ollama pull llama3
+    4  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin
+    5  docker-compose-plugin
+    6  sudo usermod -aG docker $USER
+    7  newgrp docker
+    8  docker run hello-world
+    9  ls
+   10  cd open-webui/
+   11  docker build -t open-webui-custom .
+   12  docker run -d --network=host -v /home/ubuntu/open-webui:/app -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always open-webui-custom
+   13  docker run -d --network=host -v open-webui:/app/backend/data -e
+   14  OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart
+   15  always ghcr.io/open-webui/open-webui:dev
+   16  docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:dev
+   17  docker ls
+   18  docker ps
+   19  docker stop open-webui-custom
+   20  docker stop open-webui
+   21  docker rm open-webui
+   22  docker ps
+   23  cp -RPp .env.example .env
+   24  npm i
+   25  sudo apt install npm
+   26  npm i
+   27  sudo apt update
+   28  sudo apt install nodejs npm
+   29  node -v
+   30  npm -v
+   31  npm i
+   32  npm run build
+   33  npm i
+   34  sudo apt remove nodejs npm
+   35  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+   36  sudo apt-get install -y nodejs
+   37  node -v
+   38  npm -v
+   39  node -v
+   40  npm -v
+   41  npm install
+   42  sudo apt remove nodejs npm
+   43  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+   44  sudo apt-get install -y nodejs
+   45  node -v
+   46  npm -v
+   47  node -v
+   48  sudo apt-get remove --purge nodejs npm
+   49  sudo apt-get autoremove
+   50  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+   51  sudo apt-get install -y nodejs
+   52  node -v
+   53  npm -v
+   54  node i
+   55  npm run build
+   56  sudo apt-get remove --purge nodejs npm
+   57  sudo apt-get autoremove
+   58  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+   59  sudo apt-get install -y nodejs
+   60  docker ps
+   61  docker stop open-webui
+   62  docker rm open-webui
+   63  docker compose -f docker-compose.yaml -f docker-compose.api.yaml up -d --build
+   64  cd open-webui/
+   65  docker compose -f docker-compose.yaml -f docker-compose.api.yaml up -d --build
+   66  docker compose -f docker-compose.yaml up -d --build
+   67  docker stop open-webui
+   68  docker rm open-webui
+   69  docker ps
+   70  docker stop ollama
+   71  docker rm ollama
+   72  docker compose -f docker-compose.yaml -f docker-compose.api.yaml up -d --build
+   73  docker ps
+   74  sudo lsof -i :11434
+   75  sudo kill -9 5133
+   76  docker compose -f docker-compose.yaml -f docker-compose.api.yaml up -d --build
+   77  sudo lsof -i :11434
+   78  sudo kill -9 41165
+   79* docker compose -f docker-compoup -d --build
+   80  nano docker-compose.api.yaml 
+   81  export OLLAMA_WEBAPI_PORT=11435
+   82  ./run-compose.sh --enable-gpu --enable-api[port=11435] --build
+   83  docker logs ollama
+   84  docker run -d   --name ollama   -p 11434:11434   -e MODEL_NAME=llama3   ollama/ollama:latest
+   85  ollama pull llama3
+   86  docker logs ollama
+   87  curl -X POST http://127.0.0.1:11434/api/v1/query -d '{"query": "Hello, LLaMA 3!"}'
+   88  docker run -d --network=host -v open-webui:/app/backend/data -e
+   89  OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui
+   90  docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui
+   91  docker build -t open-webui-local .
+   92  docker stop open-webui
+   93  docker rm open-webui
+   94  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+   95  docker stop open-webui
+   96  docker rm open-webui
+   97  nano /home/ubuntu/open-webui/src/lib/components/chat/MessageInput.svelte
+   98  docker build -t open-webui-local .
+   99  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  100  docker stop open-webui
+  101  docker rm open-webui
+  102  nano /home/ubuntu/open-webui/src/lib/components/chat/MessageInput.svelte
+  103  docker build -t open-webui-local .
+  104  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  105  docker stop open-webui
+  106  docker rm open-webui
+  107  nano /home/ubuntu/open-webui/src/lib/components/chat/MessageInput.svelte
+  108  docker build -t open-webui-local .
+  109  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  110  docker stop open-webui
+  111  docker rm open-webui
+  112  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  113  docker build -t open-webui-local .
+  114  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  115  docker build -t open-webui-local .
+  116  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  117  docker stop open-webui
+  118  docker rm open-webui
+  119  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  120  docker build -t open-webui-local .
+  121  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  122  docker stop open-webui
+  123  docker rm open-webui
+  124  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  125  docker build -t open-webui-local .
+  126  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  127  docker stop open-webui
+  128  docker rm open-webui
+  129  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  130  docker build -t open-webui-local .
+  131  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  132  docker stop open-webui
+  133  docker rm open-webui
+  134  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  135  docker build -t open-webui-local .
+  136  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  137  docker stop open-webui
+  138  docker rm open-webui
+  139  nano /home/ubuntu/open-webui/src/lib/components/chat/ModelSelector/Selector.svelte 
+  140  docker build -t open-webui-local .
+  141  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  142  docker stop open-webui
+  143  docker rm open-webui
+  144  nano /home/ubuntu/open-webui/src/lib/components/chat/ModelSelector/Selector.svelte 
+  145  docker build -t open-webui-local .
+  146  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  147  docker stop open-webui
+  148  docker rm open-webui
+  149  nano /home/ubuntu/open-webui/src/lib/components/chat/ModelSelector/Selector.svelte 
+  150  docker build -t open-webui-local .
+  151  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  152  docker stop open-webui
+  153  docker rm open-webui
+  154  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  155  docker build -t open-webui-local .
+  156  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  157  docker build -t open-webui-local .
+  158  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  159  docker stop open-webui
+  160  docker rm open-webui
+  161  nano /home/ubuntu/open-webui/src/lib/components/chat/Messages/ResponseMessage.svelte 
+  162  nano /home/ubuntu/open-webui/src/lib/components/chat/MessageInput.svelte 
+  163  docker build -t open-webui-local .
+  164  docker run -d --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e MODEL_NAME=llama3 --name open-webui open-webui-local
+  165  pwd
+  166  history > /home/ubuntu/open-webui/commands_history.txt
