@@ -248,7 +248,7 @@
 						<div class="flex items-center gap-2">
 							<div class="flex items-center">
 								<div class="line-clamp-1">
-									{`Your Legal Assistant + ${item.label}`}
+									{`Fine Tunned legal ${item.label}`}
 
 								</div>
 								{#if item.model.owned_by === 'ollama' && (item.model.ollama?.details?.parameter_size ?? '') !== ''}
