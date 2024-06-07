@@ -201,7 +201,7 @@
 			class="flex w-full text-left px-0.5 outline-none bg-transparent truncate text-lg font-semibold placeholder-gray-400 focus:outline-none"
 		>
 			{#if selectedModel}
-				Your Legel Assistant
+				{`Fine Tunned legal ${item.label}`}
 			{:else}
 				{placeholder}
 			{/if}
