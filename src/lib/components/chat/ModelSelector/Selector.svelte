@@ -201,7 +201,7 @@
 			class="flex w-full text-left px-0.5 outline-none bg-transparent truncate text-lg font-semibold placeholder-gray-400 focus:outline-none"
 		>
 			{#if selectedModel}
-				<div>Fine Tunned legal {item.label}</div>
+				<div>Fine Tunned legal {selectedModel.label}</div>
 			{:else}
 				<div>{placeholder}</div>
 			{/if}
