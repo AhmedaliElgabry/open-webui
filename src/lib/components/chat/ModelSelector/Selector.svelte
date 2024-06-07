@@ -201,10 +201,11 @@
 			class="flex w-full text-left px-0.5 outline-none bg-transparent truncate text-lg font-semibold placeholder-gray-400 focus:outline-none"
 		>
 			{#if selectedModel}
-				{`Fine Tunned legal ${item.label}`}
+				<div>Fine Tunned legal {item.label}</div>
 			{:else}
-				{placeholder}
+				<div>{placeholder}</div>
 			{/if}
+
 			<ChevronDown className=" self-center ml-2 size-3" strokeWidth="2.5" />
 		</div>
 	</DropdownMenu.Trigger>
