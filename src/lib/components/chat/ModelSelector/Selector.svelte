@@ -202,7 +202,7 @@
 		>
 			{#if selectedModel}
 				<div>Fine Tunned legal {selectedModel.label}</div>
-			{:else}
+			{:else} 
 				<div>{placeholder}</div>
 			{/if}
 
@@ -249,7 +249,7 @@
 						<div class="flex items-center gap-2">
 							<div class="flex items-center">
 								<div class="line-clamp-1">
-									{`Fine Tunned legal ${item.label}`}
+									{`Fine Tuned legal ${item.name}:${item.version}`}
 
 								</div>
 								{#if item.model.owned_by === 'ollama' && (item.model.ollama?.details?.parameter_size ?? '') !== ''}
