@@ -353,7 +353,7 @@
 
 		<div class="w-full overflow-hidden pl-1">
 			<Name>
-				{`Fine Tunned Legal ${model?.name ?? message.model}`}
+				{`Legal ${model?.name ?? message.model}`}
 
 				{#if message.timestamp}
 					<span
